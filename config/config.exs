@@ -5,6 +5,9 @@
 # is restricted to this project.
 use Mix.Config
 
+config :ex_twilio, account_sid:   {:system, "TWILIO_ACCOUNT_SID"},
+                   auth_token:    {:system, "TWILIO_AUTH_TOKEN"}
+
 # General application configuration
 config :twilio_tasks,
   ecto_repos: [TwilioTasks.Repo]
